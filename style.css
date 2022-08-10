@@ -1,0 +1,21 @@
+.navbar-brand{
+    margin-left: 2%;
+}
+
+.lpic{
+    height: 30px;
+    width: 30px;
+    margin-right: 5%;
+}
+
+.navbar-toggler{
+    margin-right: 5%;
+}
+
+.navbar-nav{
+    margin: 0% 6%;
+}
+
+.nav-item{
+    padding-left: 7%;
+}
