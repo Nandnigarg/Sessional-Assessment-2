@@ -5,9 +5,14 @@ let url = 'https://jsonplaceholder.typicode.com/users?utm_source=Mailerlite&utm_
 xhr.open('GET', url)
 
 xhr.onreadystatechange = () => {
+    var output = ``
     if (xhr.status === 200 && xhr.readyState === 4) {
         const response = JSON.parse(xhr.responseText)
         console.log(response)
+        for(let i=0; i<response.length; i++){
+            output += `${response[i].id}${response[i].name}${response[i].username}`
+        }
+        console.log(output)
     }
 }
 
