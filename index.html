@@ -15,38 +15,39 @@
     <!----CSS Link-->
     <link rel="stylesheet" href="style.css">
 
-    <!----JS Link-->
-    <script src="main.js"></script>
+    <!----Font Awesome-->
+    <script src="https://kit.fontawesome.com/75c34cde30.js" crossorigin="anonymous"></script>
     <title>PepHub</title>
 </head>
 
 <body>
-    <div id="home">
-        <!---Navbar-->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a href="#" class="navbar-brand"><img src="Assets/logo.png" class="lpic" alt="">PepHub</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtogglerbtn" aria-controls="navtogglerbtn" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navtogglerbtn">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Feature</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <!---Navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand"><img src="Assets/logo.png" class="lpic" alt="">PepHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtogglerbtn"
+                aria-controls="navtogglerbtn" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navtogglerbtn">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
+                    <li class="nav-item"><a href="#search" class="nav-link">Search</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <!---Home-->
+    <!---Home-->
+    <div id="home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h1 class="hheading">PepHub</h1>
                     <h3 class="htitle">Person Management Application</h3>
-                    <p class="hpara">Get details of any user using their username.</p>
+                    <p class="hpara">Get details of any user using their ID.</p>
                 </div>
                 <div class="col-lg-6">
                     <img src="Assets/people.png" class="hpic" alt="">
@@ -57,8 +58,27 @@
 
     <!---Blog--->
     <div id="blog">
-        
+
     </div>
+
+    <!---Search-->
+    <div id="search">
+        <div class="container">
+            <div class="sbtn">
+                <h1 class="uname">Enter ID</h1>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="sinput" placeholder="Enter ID (1 to 10)" aria-label="Enter ID"
+                        aria-describedby="button">
+                    <button class="btn btn-dark" type="button" id="button"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div id="data"></div>
+        </div>
+    </div>
+
+     <!----JS Link-->
+     <script src="main.js"></script>
 </body>
 
 </html>

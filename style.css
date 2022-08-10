@@ -1,4 +1,9 @@
 /* NAVBAR */
+header{
+    position: fixed;
+    width: 100%;
+}
+
 .navbar-brand{
     margin-left: 2%;
 }
@@ -24,7 +29,6 @@
 /* HOME */
 #home{
     height: 100vh;
-    width: 100vw;
     background-color: rgb(61,168,233);
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
@@ -56,3 +60,31 @@
     width: 90%;
 }
 
+/* BLOG */
+#blog{
+    height: 100vh;
+}
+
+
+/* SEARCH */
+#search{
+    background-color: rgb(61,168,233);
+}
+
+#search .container{
+    padding: 6% 3%;
+    color: white;
+}
+
+.sbtn{
+    text-align: center;
+}
+
+.uname{
+    font-size: 6vh;
+    margin-bottom: 3%;
+}
+
+#data{
+    margin-top: 3%;
+}
