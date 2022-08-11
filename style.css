@@ -2,6 +2,7 @@
 header{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar-brand{
@@ -30,13 +31,17 @@ header{
 #home{
     height: 100vh;
     background-color: rgb(61,168,233);
+    color: white;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
 }
 
-.row{
-    padding: 12%;
-    color: white;
+#home .row{
+    padding: 20% 10%;
+}
+
+.col-lg-6{
+    height: 40vh;
 }
 
 .hheading{
@@ -44,7 +49,7 @@ header{
 }
 
 .htitle{
-    font-size: 5vh;
+    font-size: 4vh;
 }
 
 .hpara{
@@ -61,8 +66,16 @@ header{
 }
 
 /* BLOG */
-#blog{
-    height: 100vh;
+.btitle{
+    text-align: center;
+}
+
+#bitem{
+    list-style-type: none;
+}
+
+.bmain{
+    font-size: 7vh;
 }
 
 
@@ -76,6 +89,10 @@ header{
     color: white;
 }
 
+.input-group{
+    z-index: 0;
+}
+
 .sbtn{
     text-align: center;
 }
@@ -87,4 +104,33 @@ header{
 
 #data{
     margin-top: 3%;
+}
+
+/* CONTACT */
+footer{
+    height: 50vh;
+    text-align: center;
+}
+
+.info{
+    padding-top: 10%;
+}
+
+.flogo{
+    height: 70px;
+    width: 70px;
+}
+
+.line{
+    margin: 2% 0%;
+}
+
+.icon{
+    font-size: 3vh;
+    margin-left: 1%;
+}
+
+.copy{
+    margin-top: 1%;
+    font-size: 1.7vh;
 }

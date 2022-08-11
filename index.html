@@ -32,9 +32,9 @@
             <div class="collapse navbar-collapse" id="navtogglerbtn">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Blogs</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a></li>
                     <li class="nav-item"><a href="#search" class="nav-link">Search</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,7 +58,62 @@
 
     <!---Blog--->
     <div id="blog">
-
+        <div class="container-fluid">
+            <div class="btitle">
+                <h1 class="page-header bmain">Blogs</h1>
+                <hr>
+            </div>
+            <div class="row brow">
+                <div class="col-lg-6 bcol">
+                    <ul id="bitem" class="list-group">
+                        <li class="list-group-item">
+                            <h1 class="bhead">Blog 1 Heading</h1>
+                            <i>-Ervin Howell</i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae nisi quae
+                                blanditiis consequuntur provident ad voluptates et eveniet omnis natus ipsum quidem
+                                enim, error alias iste consequatur molestias saepe.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h1 class="bhead">Blog 2 Heading</h1>
+                            <i>-Patricia Lebsack</i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et provident recusandae,
+                                mollitia sit sint dolore eos illum odio! Tenetur ex facere consectetur repellat cum vero
+                                aliquid pariatur fuga maiores!</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 bcol">
+                    <form>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>
+                                    <label>Enter your id: </label>
+                                </td>
+                                <td> 
+                                    <input type="text" id="bid">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Enter the message heading: </label>
+                                </td>
+                                <td>
+                                    <input type="text" id="bhead">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Enter your message</label>
+                                </td>
+                                <td>
+                                    <textarea id="bmess" cols="40" rows="8"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!---Search-->
@@ -67,8 +122,8 @@
             <div class="sbtn">
                 <h1 class="uname">Enter ID</h1>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="sinput" placeholder="Enter ID (1 to 10)" aria-label="Enter ID"
-                        aria-describedby="button">
+                    <input type="text" class="form-control" id="sinput" placeholder="Enter ID (1 to 10)"
+                        aria-label="Enter ID" aria-describedby="button">
                     <button class="btn btn-dark" type="button" id="button"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
@@ -77,8 +132,33 @@
         </div>
     </div>
 
-     <!----JS Link-->
-     <script src="main.js"></script>
+    <!---Contact-->
+    <footer class="bg-dark">
+        <div id="contact">
+            <div class="container">
+                <div class="info">
+                    <h3 class="text text-light"><img src="Assets/logo.png" class="flogo" alt=""><span> PepHub</span>
+                    </h3>
+                    <hr class="bg-light line">
+                    <a target=”_blank” href="https://www.linkedin.com/in/nandni-garg-34b53620a/"
+                        class="bg bg-dark text text-light icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target=”_blank” href="https://www.instagram.com/_nandani._.garg_/"
+                        class="bg bg-dark text text-light icon"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a target=”_blank” href="mailto:gargnandni64@gmail.com " class="bg bg-dark text text-light icon"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a target=”_blank” href="https://www.facebook.com/lucky.garg.16718/"
+                        class="bg bg-dark text text-light icon"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a target=”_blank” href="https://web.telegram.org/z/#1401930181"
+                        class="bg bg-dark text text-light icon"><i class="fa-brands fa-telegram"></i></a>
+                    <p class="text text-light copy">&copy;Copyright. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!----JS Link-->
+    <script src="main.js"></script>
 </body>
 
 </html>
