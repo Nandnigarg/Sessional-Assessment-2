@@ -1,3 +1,7 @@
+body{
+    background-color: rgba(192, 191, 196, 0.636);
+}
+
 /* NAVBAR */
 header{
     position: fixed;
@@ -75,12 +79,13 @@ header{
     margin-bottom: 5%;
 }
 
+
 #bitem{
     list-style-type: none;
 }
 
 .bmain{
-    font-size: 7vh;
+    font-size: 9vh;
 }
 
 
