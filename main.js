@@ -1,6 +1,6 @@
 document.querySelector('#button').addEventListener('click', () => {
-    var val = document.querySelector('#sinput').value
-    var comp = val-1
+    let val = document.querySelector('#sinput').value
+    let comp = val-1
     /* AJAX */
     const xhr = new XMLHttpRequest()
     let url = 'https://jsonplaceholder.typicode.com/users?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-09'
@@ -49,4 +49,19 @@ document.querySelector('#button').addEventListener('click', () => {
 
     xhr.send()
 
+})
+
+document.querySelector('#pblog').addEventListener('click', (e) => {
+    e.preventDefault()
+    let name = document.querySelector('#pval').value
+    let head = document.querySelector('#phead').value
+    let para = document.querySelector('#pmess').value
+
+    const div = document.createElement('div')
+    div.setAttribute('class', 'col-lg-6')
+    const heading = document.createElement('h1')
+    heading.setAttribute('class', 'bhead')
+    heading.textContent = head
+    div.innerHTML = heading
+    console.log(div)
 })

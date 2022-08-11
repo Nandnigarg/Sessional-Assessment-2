@@ -58,59 +58,25 @@
 
     <!---Blog--->
     <div id="blog">
-        <div class="container-fluid">
-            <div class="btitle">
-                <h1 class="page-header bmain">Blogs</h1>
-                <hr>
-            </div>
-            <div class="row brow">
-                <div class="col-lg-6 bcol">
-                    <ul id="bitem" class="list-group">
-                        <li class="list-group-item">
-                            <h1 class="bhead">Blog 1 Heading</h1>
-                            <i>-Ervin Howell</i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae nisi quae
-                                blanditiis consequuntur provident ad voluptates et eveniet omnis natus ipsum quidem
-                                enim, error alias iste consequatur molestias saepe.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <h1 class="bhead">Blog 2 Heading</h1>
-                            <i>-Patricia Lebsack</i>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et provident recusandae,
-                                mollitia sit sint dolore eos illum odio! Tenetur ex facere consectetur repellat cum vero
-                                aliquid pariatur fuga maiores!</p>
-                        </li>
-                    </ul>
+        <div class="btitle">
+            <h1 class="page-header bmain">Blogs</h1>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="bhead">Blog 1 Heading</h1>
+                    <i>-Ervin Howell</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae nisi quae
+                        blanditiis consequuntur provident ad voluptates et eveniet omnis natus ipsum quidem
+                        enim, error alias iste consequatur molestias saepe.</p>
                 </div>
-                <div class="col-lg-6 bcol">
-                    <form>
-                        <table class="table table-borderless">
-                            <tr>
-                                <td>
-                                    <label>Enter your id: </label>
-                                </td>
-                                <td> 
-                                    <input type="text" id="bid">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Enter the message heading: </label>
-                                </td>
-                                <td>
-                                    <input type="text" id="bhead">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Enter your message</label>
-                                </td>
-                                <td>
-                                    <textarea id="bmess" cols="40" rows="8"></textarea>
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
+                <div class="col-lg-6">
+                    <h1 class="bhead">Blog 2 Heading</h1>
+                    <i>-Patricia Lebsack</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et provident recusandae,
+                        mollitia sit sint dolore eos illum odio! Tenetur ex facere consectetur repellat cum vero
+                        aliquid pariatur fuga maiores!</p>
                 </div>
             </div>
         </div>
@@ -129,6 +95,30 @@
                 </div>
             </div>
             <div id="data"></div>
+            <hr class="bg bg-dark">
+            <div class="sbtn">
+                <h1 class="uname">Add Blog</h1>
+                <form>
+                    <div class="input-group mb-3">
+                        <input id="pval" type="text" class="form-control" placeholder="Name" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text bg bg-dark text text-light" id="basic-addon1">Enter your
+                            name</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="phead" type="text" class="form-control" placeholder="Message heading"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg bg-dark text text-light" id="basic-addon2">Enter message
+                            heading</span>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="pmess" class="form-control" aria-label="With textarea"
+                            placeholder="Enter your message"></textarea>
+                        <span class="input-group-text bg bg-dark text text-light">Enter your message</span>
+                    </div>
+                    <button class="btn btn-dark pbtn" id="pblog">Post Blog</button>
+                </form>
+            </div>
         </div>
     </div>
 

@@ -66,8 +66,13 @@ header{
 }
 
 /* BLOG */
+#blog{
+    padding: 5%;
+}
+
 .btitle{
     text-align: center;
+    margin-bottom: 5%;
 }
 
 #bitem{
@@ -93,6 +98,10 @@ header{
     z-index: 0;
 }
 
+label{
+    color: white;
+}
+
 .sbtn{
     text-align: center;
 }
@@ -104,6 +113,14 @@ header{
 
 #data{
     margin-top: 3%;
+}
+
+form{
+    margin-top: 3%;
+}
+
+.pbtn{
+    margin: 3%;
 }
 
 /* CONTACT */
